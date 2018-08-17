@@ -18,3 +18,9 @@ This repository is the starter code for the project: Students will fork and clon
 - Express
 - mongodb
 - Node 5.10.x or above
+
+## Screenshots
+
+!["tweets"](https://github.com/lexy5251/tweeter/blob/master/docs/tweets.png?raw=true)
+!["error reminder"](https://github.com/lexy5251/tweeter/blob/master/docs/error-remainder.png?raw=true)
+!["error reminder2"](https://github.com/lexy5251/tweeter/blob/master/docs/error-remainder2.png?raw=true)
