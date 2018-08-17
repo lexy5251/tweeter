@@ -1,0 +1,99 @@
+.new-tweet {
+  background: #adabab2e;
+   border: 1px solid #808080ad;
+   border-radius: 5px;
+}
+
+form textarea {
+  border: 1px solid grey;
+  width: 100%;
+}
+
+form {
+  padding: 10px;
+}
+
+
+.title {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.form-bottom {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  padding: 5px;
+  background-color: #eeeeee;
+}
+
+.counter {
+  padding: 5px;
+  font-style: italic;
+}
+
+article {
+  margin: 5% 0;
+  border: 1px solid #4c4b4b;
+  border-radius: 5px;
+}
+
+article header{
+  background: #bbb8b85c;
+}
+
+.head-portrait {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-header {
+  display: flex;
+}
+
+article {
+  opacity: 0.7;
+  margin-top: 3%;
+}
+
+article:hover {
+  opacity: 1;
+}
+
+.card-content {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.right-corner {
+  margin-right: 2%;
+}
+
+.error-p1 {
+  color: #d64444;
+  margin: 0px;
+  display: none;
+}
+.error-p2 {
+  color: #d64444;
+  margin: 0px;
+  display: none;
+}
+
+.margin-p {
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+

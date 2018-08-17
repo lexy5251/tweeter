@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
-  </head>
+</head>
 
-  <body>
-
+<body>
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
-      <span class="header">Tweeter</span>
+        <div class="logo-head">
+        <img class="logo" src="/images/bird.png">
+        <span class="header">Tweeter</span>
+        </div>
+        <button class="nav-button">Compose</button>
     </nav>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-    </main>
+        <section class="new-tweet">
 
-  </body>
+            <h2 class="title">Compose Tweet</h2>
+            <hr>
+            <form method="POST" action="/tweets/" class="form-content">
+                <textarea id="content" name="text" placeholder="What are you humming about?"></textarea>
+                <div class="form-bottom">
+                    <input class="submit-button" type="submit" value="Tweet">
+                    <h3 class="error-p1">This field is required</h3>
+                    <h3 class="error-p2">This field should be less than 140 characters.</h3>
+                    <span class="counter">140</span>
+                </div>
+            </form>
+        </section>
+        <div class="tweets-container">
+        </div>
+    </main>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js">
+    </script>
+
+</body>
+
 </html>
