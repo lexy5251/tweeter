@@ -14,6 +14,15 @@ $(document).ready(function() {
       let $tweet = createTweetElement(result[i]);
       $(".tweets-container").append($tweet);
     }
+    //Hover icons
+  $("article").on("mouseenter", function(){
+      $(this).css("opacity","1");
+      $(this).find(".icons").css("display","inline-flex");
+    }).on("mouseleave", function(){
+      $(this).css("opacity","0.7");
+      $(".icons").css("display","none");
+    
+  });
   };
 
 
@@ -88,9 +97,15 @@ $(document).ready(function() {
           </div>
         </div>
       </header>
-      <p class="margin-p">${escape($text)}</p>
+      <p class="content-p">${escape($text)}</p>
+      <hr>
       <footer>
-        <p class="margin-p">${escape(dateDelta)} days ago</p>
+        <p class="margin-p time">${escape(dateDelta)} days ago</p>
+        <div class="icons">
+        <i class="fa fa-flag"></i>
+        <i class="fa fa-retweet"></i>
+        <i class="fa fa-heart"></i>
+        </div>
       </footer>
     </article>
     `;
@@ -104,4 +119,6 @@ $(document).ready(function() {
        $("#content").focus();
     });
   });
+
 });
+

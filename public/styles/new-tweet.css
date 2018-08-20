@@ -66,10 +66,6 @@ article {
   margin-top: 3%;
 }
 
-article:hover {
-  opacity: 1;
-}
-
 .card-content {
   display: flex;
   width: 90%;
@@ -93,7 +89,41 @@ article:hover {
 }
 
 .margin-p {
+  font-size: 14px;
+  margin-top: 0px;
   margin-bottom: 2%;
   margin-left: 2%;
 }
 
+.fa-flag:before {
+  font-family: fontAwesome;
+  margin: 0 5px;
+}
+
+.fa-retweet:before {
+  font-family: fontAwesome;
+  margin: 0 5px;
+}
+
+.fa-heart:before {
+  font-family: fontAwesome;
+  margin: 0 5px;
+}
+.time {
+  display: inline-flex;
+}
+.icons {
+  margin: 0 2%;
+  color: #6dc797;
+  font-size: 18px;
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-p {
+  margin: 8% 0px 8% 2%;
+}
